@@ -1,0 +1,67 @@
+/************************* Acá termina Bootstrap *********************/
+
+
+/* Bucles */
+
+@for $i from 1 through 6 {
+    // bloque repite
+    // #{$var}
+    h#{$i} { 
+        font: 2.5rem / $i;
+   }
+  }
+
+
+/* Ancho de cada objeto */
+@for $x from 1 through 5{
+    #width-#{$x}{
+        width: 50px + $x*200;
+    }
+    
+}
+
+
+/* Each */
+
+
+@each $notificacion, $color in (verde, green),(amarillo, yellow),(rojo,red) {
+  .#{$notificacion}-icon {
+    background-color: $color!important;
+  } 
+}
+
+/*  Mapas */
+
+$colores:(
+/* clave:  valor*/
+    letras-1: #55acee,
+    letras-2: #3a5795,
+    letras-3: #C25E30,
+    letras-4: rgb(143, 52, 143),
+    letras-5: red,
+
+);
+
+
+$colorFondo:(
+/* clave:  valor*/
+    fondo-1: #55acee,
+    fondo-2: #3a5795,
+    fondo-3: #C25E30,
+    fondo-4: rgb(143, 52, 143),
+    fondo-5: red,
+
+);
+
+//MAPS con each
+@each $name-color, $bgcolor in $colores {
+    .#{$name-color} {
+        color: $bgcolor!important;
+    }
+ }
+
+ @each $name-color, $bgcolor in $colorFondo {
+    .#{$name-color} {
+        background-color: $bgcolor!important;
+    }
+ }

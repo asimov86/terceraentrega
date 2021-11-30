@@ -1,0 +1,213 @@
+/* Importar fonts y estilo para form*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+nav{
+    position: relative;
+}
+
+  footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    /* background-color: #828282; */
+    background-color: #302116;
+    color: white;
+  }
+  
+  
+  footer .redesSociales img{
+    width: 26px;
+    height: 26px;
+    float: right;
+    margin-right: 20px;  
+    /* border: 1px solid black; */
+  }
+
+  /* Agrego transformación */
+  footer .redesSociales img:hover{
+    transform: scale(1.2);
+  }
+  
+  footer #eslogan h2{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 14px;
+  }
+  
+  footer #redes h2{
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 14px;
+  }
+  
+  
+  footer #redes .card-title{
+    margin-right: 160px;
+    margin-top: 20px;
+
+  }
+  
+  footer #redes .redesSociales{
+    margin-right: 120px;
+  }
+
+  
+  
+  footer .copyright{
+    font-size: 10px;
+  }
+  
+  #main {
+    height: 70vh;
+    margin: 10px;
+  }
+  
+  #main article #fondo{
+    background-image: url("../images/urbanizacion.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+  }
+  
+  #main #publicidad{
+    height: 60vh;
+    background-image: url("../images/fravega.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+  }
+
+  .contactar {
+    background-image: url("../images/contacto_3.png");
+    background-repeat: repeat;
+  }
+
+
+
+
+  .botones{
+    text-align: center;
+  }
+
+.publicidad{
+  text-align: center;
+}
+
+
+.subtituloVistozo{
+  width: 100%; 
+  background-color: #f39c1c;
+  color: white;
+}
+
+.subtituloVistozoArriba .letrasBlancas{
+  color: white;
+}
+
+.subtituloVistozoArriba{
+  background-color: #f39c1c; 
+  height: 76px; 
+  margin: auto;
+  border: 1 px solid black;
+}
+
+.subtituloVistozoArriba .img{
+  width: 6px; 
+  height: 66px; 
+}
+
+
+.subtitulo img{
+  width: 66px; 
+  height: 66px; 
+  border: 1px solid black;
+}
+
+.subtitulo .h5{
+  display: none;
+}
+
+
+/* Agregarle bloque a .col ya que el es un elemento*/
+  .col{
+    display: flex;
+    justify-content: center !important;
+}
+
+  .col .card{
+    width: 18rem;
+  }
+
+
+
+  /*botón*/
+  .bg-propio{
+      background-color: #f39c1c;
+      transition: 0.5s;
+      color: black;
+
+  }
+
+  .bg-propio:hover{
+      background-color: #efbd71;
+  }
+
+  .logo{
+    width: 45px; 
+    height: 45px;
+  }
+
+  /*  /////////////////////////////////// */
+
+/* Animación */
+.animaTexto{
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+
+/* @keyframes efecto{
+  0% {
+      transform: translateX(0)
+  }
+  
+  25% {
+      transform: translateX(100px)
+  }
+
+  50% {
+      transform: translateX(200px)
+  }
+
+  75% {
+      transform: translateX(100px)
+  }
+
+  100%{
+      transform: translateX(0px)
+  }
+  
+} */
+
+@keyframes efecto{
+  from{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+  
+}
